@@ -50,9 +50,10 @@ header {
   width: 140px;
 }
 
+
 section {
   padding: 20px 0; 
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   scroll-margin-top: var(--alto_nav);  /
 }
 
@@ -93,10 +94,7 @@ section {
   text-decoration:underline #b3a7f4;
 }
 
-.logo1 {
-  height: 200px;
-  width: 200px;
-}
+
 
 /*------------- Principal*-------------*/
 
@@ -108,25 +106,31 @@ section {
 
 .logo1 {
   max-height:max-content;
-  order: 0;
-  position: relative;
   z-index: 1; 
+  order: 0;
+  position:relative;
   width: 300px; 
-  height: 300px; 
+  height: 400px; 
+  left: -75px;
+  flex-basis: 20%;
 }
 
 .logo2 {
+  max-height:max-content;
+  position:absolute;  
+  z-index: 2;
   order: 1;
-  flex-basis: 30%;
-  z-index: 2; 
-  top: 0; 
-  left: 0;
+  flex-basis: 40%;
+  width: 600px;  
+  height: 800px; 
+  left: 600px;
+  
 
 }
 
 .contenedor-textos {
   order: 2;
-  flex-basis: 70%;
+  flex-basis: 40%;
 }
 
 .titulo1 {
@@ -171,7 +175,9 @@ section {
 
   /*------------- Pagina 2*-------------*/
   .root2{
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: var(--color_primario);
   --tamanio_fuente: 18px;
   --maximo_ancho: 1200px;
